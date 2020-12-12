@@ -208,7 +208,7 @@ function main(){
           event.setTime(new Date(entry.start),new Date(entry.end));
         
         if(event.getTitle() != entry.description)
-          event.setTime(entry.description);
+          event.setTitle(entry.description);
       }
       
       delete calendarEventsById[entryId]; // We don't need the event anymore 
